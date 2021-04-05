@@ -2,22 +2,87 @@ body {
     font-size: 16px;
     max-width: 1500px;
     overflow-x: hidden;
+    margin: 0 auto;
 }
 
 .container {
     border: 1px solid black;
 }
-
+.row {
+    border-radius: 2%;
+}
 
 .header {
     display: flex;
     height: 4rem;
     align-items: center;
+    
 }
 .header-logo {
     width: 10rem;
 }
 
-.navbar {
-    border: 1px solid red;
+/* Menu Styles */
+.menu-container {
+    display: flex;
+    justify-content: right;
+}
+.ham {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.xIcon {
+    display: none;
+}
+.menu {
+    position: absolute;
+    background: #fff;
+    color: black;
+    transform: translateY(-200%);
+    transition: transform 0.2s;
+    list-style: none;
+}
+.showMenu {
+    transform: translateY(0);
+}
+
+/* Hero Styles */
+.hero-container {
+    height: 25rem;
+    text-align: center;
+    background-image: url('/assets/home/mobile/image-hero-coffeepress.jpg');
+    color: white;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    margin: 0 auto;
+}
+
+
+/* Tablet Styles */
+@media screen and (min-width: 768px) {
+    .ham {
+        display: none;
+    }
+    .menu {
+        display: flex;
+        flex-direction: row;
+        transform: translateY(0);
+        background-color: transparent;
+        justify-content: center;
+        
+    }
+    .menuLink {
+        color: #83888F;
+    }
+
+    .hero-container {
+        text-align: left;
+        filter: brightness(200%);
+    }
+    .hero-content {
+        width: 60%;
+        
+    }
 }
