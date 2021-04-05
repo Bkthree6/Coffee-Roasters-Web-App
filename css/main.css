@@ -63,14 +63,40 @@ body {
 .row-2 {
    display: flex;
    flex-direction: column; 
+   text-align: center;
+}
+.bean-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid blue;
+}
+.flex-item-1 {
+    border: 1px dashed pink;
 }
 .row-2-img {
     width: 100px;
     height: 100px;
 }
+.flex-item-2 {
+    border: 1px dashed purple;
+}
+
+.row-3-header {
+    position: unset;
+    font-size: 24px;
+    color: #fff;
+}
 
 /* Tablet Styles */
 @media screen and (min-width: 768px) {
+    h2 {
+        position: relative;
+        top: 40px;
+        font-size: 100px;
+        text-transform: lowercase;
+        
+    }
     .ham {
         display: none;
     }
@@ -93,5 +119,36 @@ body {
     .hero-content {
         width: 60%;
         
+    }
+    .bean-content {
+        flex-direction: row;
+    }
+    .flex-item-1 {
+        width: 40%;
+    }
+    .row-2-img {
+        float: right;
+    }
+    .flex-item-2 {
+        width: 60%;
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .flex-container {
+        display: flex;
+    }
+    .bean-content {
+        flex-direction: column;
+    }
+    .flex-item-1 {
+        width: 100%;
+    }
+    .row-2-img {
+        float: none;
+    }
+    .flex-item-2 {
+        width: 100%;
     }
 }
