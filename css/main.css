@@ -1,0 +1,23 @@
+body {
+    font-size: 16px;
+    max-width: 1500px;
+    overflow-x: hidden;
+}
+
+.container {
+    border: 1px solid black;
+}
+
+
+.header {
+    display: flex;
+    height: 4rem;
+    align-items: center;
+}
+.header-logo {
+    width: 10rem;
+}
+
+.navbar {
+    border: 1px solid red;
+}
