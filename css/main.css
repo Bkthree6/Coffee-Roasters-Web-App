@@ -82,10 +82,60 @@ body {
     border: 1px dashed purple;
 }
 
+.row-3 {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+
+}
+.row-3-content-container {
+    height: 18rem;
+    background-color: #333D4B;
+    border-radius: 5px 5px 0 0;
+}
 .row-3-header {
     position: unset;
     font-size: 24px;
     color: #fff;
+}
+.row-4 {
+    height: 40rem;
+    background-color: #282F38;
+    border-radius: 0 0 5px 5px;
+    margin: 0 auto;
+}
+
+.card {
+    display: flex;
+    height: 25rem;
+    flex-direction: column;
+    background-color: #0E8784;
+    color: #fff;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.container-5 {
+    height: 100%;
+}
+.row-5-header {
+    padding-top: 45rem;
+} 
+.row-5-flex-container {
+    display: flex;
+    flex-direction: column;
+}
+.icon-container {
+    display: none;
+}
+.footer {
+    background-color: #333D4B;
+    
+}
+.footer-logo {
+    width: 20rem;
+    text-align: center;
 }
 
 /* Tablet Styles */
@@ -133,6 +183,45 @@ body {
         width: 60%;
         text-align: left;
     }
+    .row-4 {
+        height: 30rem;
+    }
+    .card {
+        flex-direction: row;
+        height: 15rem;
+    }
+    .card-img-container {
+        width: 45%;
+    }
+    .card-content {
+        text-align: left;
+    }
+    .row-5-flex-container {
+        display: flex;
+        flex-direction: row;
+    }
+    .icon-container {
+        display: flex;
+        flex-direction: row;
+        
+    }
+    .circle {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        border: 1px solid #0E8784;
+    
+    }
+    hr {
+        padding-left: 0;
+        padding-right: 0;
+        margin: 20px 0;
+        height: 5%;
+        width: 30%;
+        color: #FDD6BA;
+        background-color: #FDD6BA;
+    }
+    
 }
 
 @media screen and (min-width: 992px) {
@@ -150,5 +239,14 @@ body {
     }
     .flex-item-2 {
         width: 100%;
+    }
+    .row-4 {
+        height: 10rem;
+    }
+    .card {
+        flex-direction: column;
+    }
+    .card-content {
+        text-align: center;
     }
 }
