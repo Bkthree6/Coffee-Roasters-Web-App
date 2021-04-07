@@ -1,0 +1,106 @@
+body {
+    font-size: 16px;
+    width: 100%;
+    max-width: 1500px;
+    overflow-x: hidden;    
+}
+
+.header {
+    position: relative;
+    display: flex;
+    height: 4rem;
+    bottom: 1.5rem;
+    align-items: center;
+
+}
+.header-logo {
+    width: 10rem;
+}
+
+/* Menu Styles */
+.menu-container {
+    display: flex;
+    justify-content: right;
+}
+.ham {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.xIcon {
+    display: none;
+}
+.menu {
+    position: relative;
+    background: #fff;
+    color: black;
+    transform: translateY(-200%);
+    transition: transform 0.2s;
+    list-style: none;
+}
+.showMenu {
+    transform: translateY(0);
+}
+
+.row-1 {
+    background-image: url("/assets/about/mobile/image-hero-whitecup.jpg");
+    background-position: 10% 20%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 95%;
+    height: 25rem;
+    margin: 30px auto;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.row-2 {
+    margin: 60px 0;
+}
+.container-2-img {
+    display: block;
+    width: 95%;
+    height: 25rem;
+    margin: 40px auto;
+    border-radius: 10px;
+}
+
+.flex-container {
+    display: flex;
+    height: 35rem;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    background-color: #333D4B;
+    color: #fff;
+    margin: 5rem 0;
+    border-radius: 10px;
+}
+.flex-item-1 {
+    position: relative;
+    bottom: 4rem;
+}
+.flex-img {
+    height: 10rem;
+    width: 90%;
+    border-radius: 10px;
+}
+
+.row-4 {
+    display: block;
+}
+
+.footer {
+    background-color: #333D4B;
+    
+}
+.footer-logo {
+    width: 20rem;
+    text-align: center;
+}
+
+@media screen and (min-width: 992px) {
+    .flex-container {
+        flex-direction: row-reverse;
+    }
+}
