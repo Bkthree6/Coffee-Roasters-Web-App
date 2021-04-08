@@ -10,6 +10,7 @@ body {
 }
 h1, h2, h3, h4, h5 {
     font-family: 'Fraunces', serif;
+    font-weight: 700;
 }
 
 .header {
@@ -45,6 +46,7 @@ h1, h2, h3, h4, h5 {
     transition: transform 0.2s;
     list-style: none;
 }
+
 .showMenu {
     transform: translateY(0);
 }
@@ -65,12 +67,18 @@ h1, h2, h3, h4, h5 {
 .row-2 {
     margin: 60px 0;
 }
-.container-2-img {
+.container-2-img-mob {
     display: block;
     width: 100%;
     height: 25rem;
     margin: 40px auto;
     border-radius: 10px;
+}
+.container-2-img-tab {
+    display: none;
+}
+.container-2-img-desk {
+    display: none;
 }
 
 .flex-container {
@@ -92,6 +100,12 @@ h1, h2, h3, h4, h5 {
     height: 10rem;
     width: 90%;
     border-radius: 10px;
+}
+.flex-img-tab {
+    display: none;
+}
+.flex-img-desk {
+    display: none;
 }
 .flex-item-2 {
     width: 90%;
@@ -148,12 +162,13 @@ h1, h2, h3, h4, h5 {
 
 @media screen and (min-width: 768px) {
     body {
-        max-width: 768px;
+        
         overflow-x: hidden;
     }
     .header {
         width: 100%;
         margin: 0 auto;
+        padding-top: 1.5rem;
     }
     .header-logo {
         padding-top: 2rem;
@@ -164,7 +179,7 @@ h1, h2, h3, h4, h5 {
     .menu {
         display: flex;
         flex-direction: row;
-        transform: translateY(0);
+        transform: translateY(80%);
         background-color: transparent;
         justify-content: center;
         
@@ -173,22 +188,157 @@ h1, h2, h3, h4, h5 {
         color: #83888F;
     }
     .row-1 {
-        width: 116%;
+        width: 100%;
         height: 28rem;
         background-image: url('/assets/about/tablet/image-hero-whitecup.jpg');
+        
     }
     .container-1-content {
         padding-top: 2rem;
         padding-left: 4rem;
     }
+
+    .container-2-img-mob {
+        display: none;
+    }
+    .container-2-img-tab {
+        display: block;
+        height: 30rem;
+        width: 100%;
+        border-radius: 10px;
+    }
+    .container-2-content {
+        height: 26rem;
+        margin-bottom: 10rem;
+        padding-top: 1rem;
+        padding-left: 2rem;
+    }
+    .container-2-content p {
+        font-size: 15px;
+    }
+
+    .flex-img {
+        display: none;
+    }
     
+    .flex-item-1 {
+        bottom: 8.5rem;
+    }
+    .flex-img-tab {
+        display: block;
+        border-radius: 10px;
+    }
+    .flex-item-2 {
+        position: relative;
+        bottom: 5rem;
+        width: 85%;
+    }
+
+    .row-4 {
+        width: 95%;
+        margin: 0 auto;
+    }
+    .container-4-item {
+        margin-right: 2.5rem;
+    }
+    .country {
+        font-size: 1.5rem;
+    }
+
     .footer-logo-container {
         margin: 0 25%;
     }
 }
 
 @media screen and (min-width: 992px) {
+    body {
+        max-width: 1500px;
+    }
+
+    .row-1 {
+        background-image: url('/assets/about/desktop/image-hero-whitecup.jpg');
+        padding: 5rem 0;
+    }
+
+    .row-2 {
+        padding: 0 3rem;
+    }
+    .container-2-img-tab {
+        display: none;
+    }
+    .container-2-img-desk {
+        display: block;
+        height: 25rem;
+        width: 20rem;
+        border-radius: 10px;
+    }
+    .container-2-content {
+        width: 95%;
+        margin-bottom: 5rem;
+    }
+
     .flex-container {
+        height: 25rem;
         flex-direction: row-reverse;
+    }
+    .flex-item-1 {
+        bottom: 5rem;
+        left: 2rem;
+    }
+    .flex-img-tab {
+        display: none;
+    }
+    .flex-img-desk {
+        display: block;
+        width: 80%;
+        border-radius: 10px;
+    }
+    .flex-item-2 {
+        position: relative;
+        width: 50%;
+        text-align: left;
+        top: .1rem;
+        left: .5rem;
+    }
+
+    .row-4 {
+        justify-content: space-evenly;
+        padding-left: 2rem;
+    }
+    .container-4-item {
+        width: 25%;
+    }
+
+    .footer {
+        display: flex;
+        height: 6rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-logo-container {
+        margin: 0;
+        padding: 0;
+    }
+    .footer-logo {
+        width: 15rem;
+        top: 0;
+    }
+    .footer-nav {
+        display: flex;
+        flex-direction: row;
+        padding-top: 5%;
+        margin-left: 10%;
+    }
+    .footer-nav li {
+        margin-right: 9%;
+    }
+    .icon-flex-container {
+        bottom: 0;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .flex-item-2 {
+        width: 55%;
     }
 }
