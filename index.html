@@ -9,6 +9,9 @@
   <link rel="stylesheet" href="css/main.css">
   
   <title>Frontend Mentor | Coffeeroasters subscription site</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;400&family=Fraunces:wght@300;400;700&display=swap" rel="stylesheet"> 
 </head>
 <body>
   <!-- Header / Nav Container -->
@@ -39,10 +42,10 @@
     <div class="row hero-container">
       <div class="col-12 col-md-11 ">
         <div class="hero-content">
-          <h1>Great coffee made simple.</h1>
-          <p>Start your mornings with the world’s best coffees. Try our expertly curated artisan 
+          <h1 class="mb-4">Great coffee made simple.</h1>
+          <p class="mb-5">Start your mornings with the world’s best coffees. Try our expertly curated artisan 
             coffees from our best roasters delivered directly to your door, at your schedule.</p>
-          <button>Create your plan</button>
+          <button class="btn">Create your plan</button>
         </div>
       </div>
 
@@ -53,7 +56,7 @@
   <!-- Container 2 -->
   <div class="container">
     <div class="row row-2">
-      <h2>Our collection</h2>
+      <h2 class="container-2-header">Our collection</h2>
 
       <div class="flex-container">
         <!-- Bean Type 1 -->
@@ -63,7 +66,7 @@
           </div>
         
           <div class="flex-item-2">
-            <h3>Gran Espresso</h3>
+            <h3  class="mb-3">Gran Espresso</h3>
             <p>Light and flavorful blend with cocoa and black pepper for an intense experience</p>
           </div>
         </div>
@@ -75,7 +78,7 @@
           </div>
         
           <div class="flex-item-2">
-            <h3>Planalto</h3>
+            <h3 class="mb-3">Planalto</h3>
             <p>Brazilian dark roast with rich and velvety body, and hints of fruits and nuts</p>
           </div>
         </div>
@@ -87,7 +90,7 @@
           </div>
           
           <div class="flex-item-2">
-            <h3>Piccollo</h3>
+            <h3 class="mb-3">Piccollo</h3>
             <p>Mild and smooth blend featuring notes of toasted almond and dried cherry</p>
           </div>
         </div>
@@ -99,7 +102,7 @@
           </div>
 
           <div class="flex-item-2">
-            <h3>Danche</h3>
+            <h3 class="mb-3">Danche</h3>
             <p>Ethiopian hand-harvested blend densely packed with vibrant fruit notes</p>
           </div>
         </div>
@@ -111,9 +114,9 @@
   <!-- Container 3 / Card Container-->
   <div class="container">
     <div class="row text-center row-3">
-      <div class="col-12 row-3-content-container">
-        <h2 class="row-3-header">Why choose us?</h2>
-        <p>A large part of our role is choosing which particular coffees will be featured 
+      <div class="col-12 row-3-content-container pt-5">
+        <h2 class="row-3-header pb-3">Why choose us?</h2>
+        <p class="">A large part of our role is choosing which particular coffees will be featured 
           in our range. This means working closely with the best coffee growers to give 
           you a more impactful experience on every level.</p>
       </div>
@@ -126,13 +129,13 @@
       <div class="col-12 col-lg-4">
         <div class="card card-1">
 
-          <div class="card-img-container">
+          <div class="card-img-container card-content">
             <img src="assets/home/desktop/icon-coffee-bean.svg">
           </div>
 
           <div class="card-content">
-            <h4>Best quality</h4>
-            <p>Discover an endless variety of the world’s best artisan coffee from each of our roasters.</p>
+            <h4 class="pt-2">Best quality</h4>
+            <p class="pt-2">Discover an endless variety of the world’s best artisan coffee from each of our roasters.</p>
           </div>
         </div>
 
@@ -141,13 +144,13 @@
       <div class="col-12 col-lg-4">
         <div class="card card-2">
 
-          <div class="card-img-container">
+          <div class="card-img-container card-content">
             <img src="assets/home/desktop/icon-gift.svg">
           </div>
 
           <div class="card-content">
-            <h4>Exclusive benefits</h4>
-            <p>Special offers and swag when you subscribe, including 30% off your first shipment.</p>
+            <h4 class="pt-3">Exclusive benefits</h4>
+            <p class="pt-2">Special offers and swag when you subscribe, including 30% off your first shipment.</p>
           </div>
 
         </div>
@@ -156,13 +159,13 @@
       <div class="col-12 col-lg-4">
         <div class="card card-3">
 
-          <div class="card-img-container">
+          <div class="card-img-container card-content">
             <img src="assets/home/desktop/icon-truck.svg">
           </div>
 
-          <div class="card-content">
-            <h4>Free shipping</h4>
-            <p>We cover the cost and coffee is delivered fast. Peak freshness: guaranteed.</p>
+          <div class="card-content flex-column">
+            <h4 class="pt-3">Free shipping</h4>
+            <p class="pt-2">We cover the cost and coffee is delivered fast. Peak freshness: guaranteed.</p>
           </div>
 
         </div>
@@ -175,7 +178,7 @@
     <div class="row text-center text-md-left row-5">
 
       <div class="col-12 row-5-header">
-        <h3>How it works</h3>
+        <h3 class="pb-5">How it works</h3>
       </div>
       <div class="col-md-12">
         <div class="icon-container">
@@ -190,29 +193,30 @@
         <div class="row-5-flex-container">
           <div class="row-5-flex-item">
             <p class="number">01</p>
-            <h4>Pick your coffee</h4>
-            <p>Select from our evolving range of artisan coffees. Our beans are ethically 
+            <h4 class="pb-3 w-20">Pick your coffee</h4>
+            <p class="w-80">Select from our evolving range of artisan coffees. Our beans are ethically 
               sourced and we pay fair prices for them. There are new coffees in all profiles 
               every month for you to try out.</p>
 
           </div>
-          <div class="row-5-flex-item">
+          <div class="row-5-flex-item item-2">
             <p class="number">02</p>
-            <h4>Choose the frequency</h4>
-            <p>Customize your order frequency, quantity, even your roast style and grind type. 
+            <h4 class="pb-3">Choose the frequency</h4>
+            <p class="w-80">Customize your order frequency, quantity, even your roast style and grind type. 
               Pause, skip or cancel your subscription with no commitment through our online portal.</p>
             
           </div>
-          <div class="row-5-flex-item">
+          <div class="row-5-flex-item item-3">
             <p class="number">03</p>
-            <h4>Receive and enjoy!</h4>
-            <p>We ship your package within 48 hours, freshly roasted. Sit back and enjoy award-winning 
+            <h4 class="pb-3">Receive and enjoy!</h4>
+            <p class="w-80">We ship your package within 48 hours, freshly roasted. Sit back and enjoy award-winning 
               world-class coffees curated to provide a distinct tasting experience.</p>
             
           </div>
-          <div class="col-12">
-            <button>Create your plan</button>
-          </div>
+          
+        </div>
+        <div class="col-12 footer-btn-container">
+          <button class="btn mt-3">Create your plan</button>
         </div>
       </div>
 
@@ -222,24 +226,23 @@
   <!-- Footer -->
   <div class="container">
     <div class="row footer">
-      <div class="col-12 col-lg-3">
-        <img class="footer-logo" src="assets/shared/desktop/logo-white.png">
-      </div>
-      <div class="col-12 col-lg-5">
-        <ul>
-          <li>Home</li>
-          <li>About us</li>
-          <li>Create your plan</li>
-        </ul>
-      </div>
-      <div class="col-12 col-lg-4">
+      <div class="col-12 col-lg-3 footer-logo-container">
+        <img class="footer-logo" src="/assets/shared/desktop/logo-white.png">
+    </div>
+    <div class="col-12 col-lg-5 text-decoration-none">
+      <ul class="footer-nav">
+        <li>Home</li>
+        <li>About us</li>
+        <li>create your plan</li>
+      </ul>
+    </div>
+    <div class="col-12 col-lg-4 text-center text-lg-right">
         <div class="icon-flex-container">
-          <img src="assets/shared/desktop/icon-facebook.svg">
-          <img src="assets/shared/desktop/icon-twitter.svg">
-          <img src="assets/shared/desktop/icon-instagram.svg">
+          <img class="icon" src="assets/shared/desktop/icon-facebook.svg">
+          <img class="icon" src="assets/shared/desktop/icon-twitter.svg">
+          <img class="icon" src="assets/shared/desktop/icon-instagram.svg">
         </div>
       </div>
-    </div>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

@@ -4,12 +4,17 @@ body {
     max-width: 1500px;
     overflow-x: hidden;    
 }
-
-.container {
-    border: 1px solid black;
+h1, h2, h3, h4, h5 {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
 }
-.row {
-    border-radius: 2%;
+
+.btn {
+    font-family: 'Fraunces', serif;
+    height: 3rem;
+    width: 10rem;
+    background-color: #0E8784;
+    color: #FEFCF7;
 }
 
 .header {
@@ -50,36 +55,47 @@ body {
 
 /* Hero Styles */
 .hero-container {
-    height: 25rem;
+    height: 30rem;
     text-align: center;
     background-image: url('/assets/home/mobile/image-hero-coffeepress.jpg');
     color: white;
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    margin: 0 auto;
+    margin: 30px auto;
+    border-radius: 10px;
+}
+.hero-content {
+    padding: 5rem 0;
 }
 
 .row-2 {
    display: flex;
    flex-direction: column; 
    text-align: center;
+   margin: 7rem 0;
+}
+.container-2-header {
+    background: -webkit-linear-gradient(#83888F, #fdfdfd);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .bean-content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid blue;
+    margin: 4rem 0;
 }
-.flex-item-1 {
-    border: 1px dashed pink;
+.bean-content:first-child {
+    margin-top: 1rem;
 }
 .row-2-img {
-    width: 100px;
-    height: 100px;
+    width: 9rem;
+    height: 9rem;
+    margin-bottom: 1rem;
 }
 .flex-item-2 {
-    border: 1px dashed purple;
+    width: 90%;
 }
 
 .row-3 {
@@ -99,10 +115,11 @@ body {
     color: #fff;
 }
 .row-4 {
-    height: 40rem;
+    height: 43rem;
     background-color: #282F38;
     border-radius: 0 0 5px 5px;
     margin: 0 auto;
+    padding: 3rem 0;
 }
 
 .card {
@@ -116,26 +133,62 @@ body {
     margin-bottom: 20px;
     border-radius: 10px;
 }
+.card-content {
+    height: 50%;
+    width: 85%;
+}
+.card-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+}
+
 .container-5 {
     height: 100%;
+    margin-bottom: 8rem;
 }
 .row-5-header {
     padding-top: 45rem;
+    color: #83888F;
 } 
 .row-5-flex-container {
     display: flex;
     flex-direction: column;
 }
-.icon-container {
-    display: none;
+.number {
+    font-size: 4rem;
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    color: #FDD6BA;
 }
 .footer {
     background-color: #333D4B;
-    
+    height: 20rem;
+    width: 96%;
+    margin: 4rem auto;
 }
 .footer-logo {
-    width: 20rem;
+    position: relative;
+    top: 2rem;
+    width: 19rem;
     text-align: center;
+}
+.footer-nav {
+    list-style: none;
+    color: #83888F;
+    text-align: center;
+    padding-left: 0;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 2.5rem;
+}
+.icon-flex-container {
+    position: relative;
+    bottom: 1rem;
+}
+.icon {
+    padding: 0 10px;
 }
 
 /* Tablet Styles */
@@ -163,12 +216,15 @@ body {
     }
 
     .hero-container {
+        background-image: url('/assets/home/tablet/image-hero-coffeepress.jpg');
         text-align: left;
-        filter: brightness(200%);
     }
     .hero-content {
         width: 60%;
-        
+    }
+    .container-2-header {
+        font-size: 90px;
+        top: 60px;
     }
     .bean-content {
         flex-direction: row;
@@ -178,17 +234,22 @@ body {
     }
     .row-2-img {
         float: right;
+        width: 13rem;
+        height: 11rem;
+        padding-left: 3rem;
     }
     .flex-item-2 {
         width: 60%;
         text-align: left;
     }
     .row-4 {
-        height: 30rem;
+        height: 27.5rem;
     }
     .card {
         flex-direction: row;
         height: 15rem;
+        width: 90%;
+        margin: 10px auto;
     }
     .card-img-container {
         width: 45%;
@@ -196,14 +257,34 @@ body {
     .card-content {
         text-align: left;
     }
+    .row-5-header {
+        padding-top: 33rem;
+    }
     .row-5-flex-container {
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
     }
+    .row-5-flex-container h4 {
+        width: 70%;
+    }
+    .row-5-flex-item {
+        width: 32%;
+    }
+    .item-2 {
+        position: relative;
+        left: 1rem;
+    }
+    .item-3 {
+        position: relative;
+        left: 1.5rem;
+    }
+    
+
     .icon-container {
         display: flex;
+        position: relative;
         flex-direction: row;
-        
     }
     .circle {
         height: 40px;
@@ -220,6 +301,9 @@ body {
         width: 30%;
         color: #FDD6BA;
         background-color: #FDD6BA;
+    }
+    .footer-btn-container {
+        padding-left: 0;
     }
     
 }
@@ -241,7 +325,7 @@ body {
         width: 100%;
     }
     .row-4 {
-        height: 10rem;
+        height: 5rem;
     }
     .card {
         flex-direction: column;
