@@ -1,6 +1,7 @@
 body {
     font-size: 16px;
     font-family: 'Barlow', sans-serif;
+    font-weight: 300;
     line-height: 1.7rem;
     width: 100%;
     max-width: 1500px;
@@ -11,6 +12,12 @@ body {
 h1, h2, h3, h4, h5 {
     font-family: 'Fraunces', serif;
     font-weight: 700;
+}
+a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #83888F;
 }
 
 .header {
@@ -162,7 +169,6 @@ h1, h2, h3, h4, h5 {
 
 @media screen and (min-width: 768px) {
     body {
-        
         overflow-x: hidden;
     }
     .header {
@@ -170,22 +176,29 @@ h1, h2, h3, h4, h5 {
         margin: 0 auto;
         padding-top: 1.5rem;
     }
+    .logo-container {
+        padding-left: 0;
+    }
     .header-logo {
         padding-top: 2rem;
     }
     .ham {
         display: none;
     }
+    .menu-container {
+        justify-content: flex-end;
+        padding-right: 0;
+    }
     .menu {
         display: flex;
         flex-direction: row;
         transform: translateY(80%);
         background-color: transparent;
-        justify-content: center;
-        
+        justify-content: flex-end;
     }
     .menuLink {
         color: #83888F;
+        margin-left: 2rem;
     }
     .row-1 {
         width: 100%;
@@ -198,6 +211,10 @@ h1, h2, h3, h4, h5 {
         padding-left: 4rem;
     }
 
+    .row-2 {
+        margin-top: 100px;
+        margin-bottom: 150px;
+    }
     .container-2-img-mob {
         display: none;
     }
@@ -257,18 +274,19 @@ h1, h2, h3, h4, h5 {
 
     .row-1 {
         background-image: url('/assets/about/desktop/image-hero-whitecup.jpg');
-        padding: 5rem 0;
+        padding: 3rem 0;
     }
 
     .row-2 {
         padding: 0 3rem;
+        margin: 50px 0;
     }
     .container-2-img-tab {
         display: none;
     }
     .container-2-img-desk {
         display: block;
-        height: 25rem;
+        height: 27rem;
         width: 20rem;
         border-radius: 10px;
     }
@@ -292,6 +310,7 @@ h1, h2, h3, h4, h5 {
         display: block;
         width: 80%;
         border-radius: 10px;
+        margin-left: 2rem;
     }
     .flex-item-2 {
         position: relative;
@@ -312,6 +331,7 @@ h1, h2, h3, h4, h5 {
     .footer {
         display: flex;
         height: 6rem;
+        width: 100%;
         justify-content: center;
         align-items: center;
     }
