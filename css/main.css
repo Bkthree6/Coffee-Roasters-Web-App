@@ -2,7 +2,8 @@ body {
     font-size: 16px;
     width: 100%;
     max-width: 1500px;
-    overflow-x: hidden;    
+    overflow-x: hidden; 
+    line-height: 1.7rem;   
 }
 h1, h2, h3, h4, h5 {
     font-family: 'Fraunces', serif;
@@ -23,6 +24,7 @@ h1, h2, h3, h4, h5 {
     height: 4rem;
     bottom: 1.5rem;
     align-items: center;
+    padding-top: 2rem;
 }
 .header-logo {
     width: 10rem;
@@ -48,9 +50,10 @@ h1, h2, h3, h4, h5 {
     transform: translateY(-200%);
     transition: transform 0.2s;
     list-style: none;
+    padding-top: 1rem;
 }
 .showMenu {
-    transform: translateY(0);
+    transform: translateY(10%);
 }
 
 /* Hero Styles */
@@ -77,7 +80,7 @@ h1, h2, h3, h4, h5 {
 }
 .container-2-header {
     background: -webkit-linear-gradient(#83888F, #fdfdfd);
-    background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .bean-content {
@@ -99,10 +102,9 @@ h1, h2, h3, h4, h5 {
 }
 
 .row-3 {
-    height: 100%;
+    height: 110%;
     width: 100%;
     margin: 0 auto;
-
 }
 .row-3-content-container {
     height: 18rem;
@@ -114,12 +116,18 @@ h1, h2, h3, h4, h5 {
     font-size: 24px;
     color: #fff;
 }
+.row-3-para {
+    color:#83888F;
+    width: 80%;
+    margin: 0 auto;
+}
 .row-4 {
     height: 43rem;
     background-color: #282F38;
     border-radius: 0 0 5px 5px;
     margin: 0 auto;
     padding: 3rem 0;
+    border-top: none;
 }
 
 .card {
@@ -160,6 +168,7 @@ h1, h2, h3, h4, h5 {
     font-size: 4rem;
     font-family: 'Fraunces', serif;
     font-weight: 700;
+    line-height: 8rem;
     color: #FDD6BA;
 }
 .footer {
@@ -221,6 +230,7 @@ h1, h2, h3, h4, h5 {
     }
     .hero-content {
         width: 60%;
+        padding-left: 3rem;
     }
     .container-2-header {
         font-size: 90px;
@@ -242,6 +252,13 @@ h1, h2, h3, h4, h5 {
         width: 60%;
         text-align: left;
     }
+    .row-3 {
+        border: none;
+    }
+    .row-3-header {
+        font-size: 40px;
+    }
+    
     .row-4 {
         height: 27.5rem;
     }
@@ -301,6 +318,9 @@ h1, h2, h3, h4, h5 {
         width: 30%;
         color: #FDD6BA;
         background-color: #FDD6BA;
+    }
+    .footer-logo-container {
+        margin-left: 24%;
     }
     .footer-btn-container {
         padding-left: 0;
