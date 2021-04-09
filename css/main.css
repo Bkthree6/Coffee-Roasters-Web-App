@@ -2,14 +2,20 @@ body {
     font-size: 16px;
     width: 100%;
     max-width: 1500px;
-    overflow-x: hidden; 
-    line-height: 1.7rem;   
+    overflow-x: hidden;  
+    line-height: 1.7rem; 
+    font-weight: 300; 
 }
 h1, h2, h3, h4, h5 {
     font-family: 'Fraunces', serif;
     font-weight: 700;
 }
-
+a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #83888F;
+}
 .btn {
     font-family: 'Fraunces', serif;
     height: 3rem;
@@ -24,7 +30,6 @@ h1, h2, h3, h4, h5 {
     height: 4rem;
     bottom: 1.5rem;
     align-items: center;
-    padding-top: 2rem;
 }
 .header-logo {
     width: 10rem;
@@ -50,10 +55,9 @@ h1, h2, h3, h4, h5 {
     transform: translateY(-200%);
     transition: transform 0.2s;
     list-style: none;
-    padding-top: 1rem;
 }
 .showMenu {
-    transform: translateY(10%);
+    transform: translateY(0);
 }
 
 /* Hero Styles */
@@ -102,9 +106,10 @@ h1, h2, h3, h4, h5 {
 }
 
 .row-3 {
-    height: 110%;
+    height: 100%;
     width: 100%;
     margin: 0 auto;
+
 }
 .row-3-content-container {
     height: 18rem;
@@ -113,13 +118,11 @@ h1, h2, h3, h4, h5 {
 }
 .row-3-header {
     position: unset;
-    font-size: 24px;
+    font-size: 2rem;
     color: #fff;
 }
 .row-3-para {
-    color:#83888F;
-    width: 80%;
-    margin: 0 auto;
+    color: #83888F;
 }
 .row-4 {
     height: 43rem;
@@ -127,7 +130,6 @@ h1, h2, h3, h4, h5 {
     border-radius: 0 0 5px 5px;
     margin: 0 auto;
     padding: 3rem 0;
-    border-top: none;
 }
 
 .card {
@@ -168,7 +170,6 @@ h1, h2, h3, h4, h5 {
     font-size: 4rem;
     font-family: 'Fraunces', serif;
     font-weight: 700;
-    line-height: 8rem;
     color: #FDD6BA;
 }
 .footer {
@@ -209,19 +210,31 @@ h1, h2, h3, h4, h5 {
         text-transform: lowercase;
         
     }
+    .header {
+        padding-top: 2rem;
+    }
     .ham {
         display: none;
+    }
+    .menu-container {
+        padding-top: 1rem;
+        justify-content: flex-end;
     }
     .menu {
         display: flex;
         flex-direction: row;
         transform: translateY(0);
         background-color: transparent;
-        justify-content: center;
+        justify-content: flex-end;
+        width: 100%;
         
     }
     .menuLink {
         color: #83888F;
+        margin-left: 30px;
+        padding-left: 0;
+        text-transform: uppercase;
+        font-size: 14px;
     }
 
     .hero-container {
@@ -229,8 +242,8 @@ h1, h2, h3, h4, h5 {
         text-align: left;
     }
     .hero-content {
-        width: 60%;
-        padding-left: 3rem;
+        width: 75%;
+        padding: 5rem 3rem;
     }
     .container-2-header {
         font-size: 90px;
@@ -252,13 +265,13 @@ h1, h2, h3, h4, h5 {
         width: 60%;
         text-align: left;
     }
-    .row-3 {
-        border: none;
+    .row-3-content-container {
+        background-color: #282F38;
     }
-    .row-3-header {
-        font-size: 40px;
+    .row-3-para {
+        width: 80%;
+        margin: 0 auto;
     }
-    
     .row-4 {
         height: 27.5rem;
     }
@@ -319,8 +332,11 @@ h1, h2, h3, h4, h5 {
         color: #FDD6BA;
         background-color: #FDD6BA;
     }
+    .number {
+        line-height: 9rem;
+    }
     .footer-logo-container {
-        margin-left: 24%;
+        padding-left: 11rem;
     }
     .footer-btn-container {
         padding-left: 0;
@@ -329,28 +345,101 @@ h1, h2, h3, h4, h5 {
 }
 
 @media screen and (min-width: 992px) {
+    .hero-container {
+        background-image: url('/assets/home/desktop/image-hero-coffeepress.jpg');
+        border-radius: 10px;
+    }
+    .hero-content {
+        width: 60%;
+    }
     .flex-container {
         display: flex;
     }
+    .container-2-header {
+        font-size: 7rem;
+        width: 90%;
+        margin: 0 auto;
+        top: 30px;
+    }
+    .row-2 {
+        margin-bottom: 2rem;
+    }
     .bean-content {
+        position: relative;
         flex-direction: column;
+        bottom: 5rem;
+    }
+    .bean-content:first-child {
+        margin-top: 4rem;
     }
     .flex-item-1 {
-        width: 100%;
+        width: 115%;
     }
     .row-2-img {
-        float: none;
+        float: left;
+        margin: 0 auto;
     }
     .flex-item-2 {
         width: 100%;
+        text-align: center;
+    }
+    .row-3-header {
+        padding-top: 1rem;
+    }
+    .row-3-para {
+        width: 60%;
     }
     .row-4 {
-        height: 5rem;
+        height: 9rem;
     }
     .card {
+        position: relative;
         flex-direction: column;
+        height: 20rem;
+        width: 100%;
+        bottom: 5rem;
+        line-height: 1.5rem;
     }
     .card-content {
         text-align: center;
+    }
+    .row-5-header {
+        padding-top: 18rem;
+    }
+    .row-5-flex-item {
+        width: 35%;
+        padding-right: 3rem;
+    }
+    .row-5-flex-container h4 {
+        width: 60%;
+    }
+    .footer {
+        display: flex;
+        height: 6rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-logo-container {
+        margin: 0;
+        padding: 0;
+    }
+    .footer-logo {
+        width: 15rem;
+        top: 0;
+        
+    }
+    .footer-nav {
+        display: flex;
+        flex-direction: row;
+        padding-top: 5%;
+        margin-left: 0%;
+        padding-left: 3rem;
+    }
+    .footer-nav li {
+        margin-right: 9%;
+        
+    }
+    .icon-flex-container {
+        bottom: 0;
     }
 }
