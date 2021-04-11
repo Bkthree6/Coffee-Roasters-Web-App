@@ -7,6 +7,7 @@ body {
     line-height: 1.7rem; 
     background-color: #FEFCF7;
     font-weight: 300; 
+    margin: 0 auto;
 }
 h1, h2, h3, h4, h5 {
     font-family: 'Fraunces', serif;
@@ -87,6 +88,7 @@ a {
 }
 .container-2-header {
     background: -webkit-linear-gradient(#83888F, #fdfdfd);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }

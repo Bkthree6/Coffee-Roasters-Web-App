@@ -1,0 +1,243 @@
+body {
+    font-size: 16px;
+    font-family: 'Barlow', sans-serif;
+    width: 100%;
+    max-width: 1500px;
+    overflow-x: hidden;  
+    line-height: 1.7rem; 
+    background-color: #FEFCF7;
+    font-weight: 300; 
+    margin: 0 auto;
+}
+h1, h2, h3, h4, h5 {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+}
+a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #83888F;
+}
+.btn {
+    font-family: 'Fraunces', serif;
+    height: 3rem;
+    width: 10rem;
+    background-color: #0E8784;
+    color: #FEFCF7;
+}
+
+
+.header {
+    position: relative;
+    display: flex;
+    height: 4rem;
+    bottom: 1.5rem;
+    align-items: center;
+}
+.header-logo {
+    width: 10rem;
+}
+
+/* Menu Styles */
+.menu-container {
+    display: flex;
+    justify-content: right;
+    font-size: 15px;
+}
+.ham {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.xIcon {
+    display: none;
+}
+.menu {
+    position: relative;
+    background: #fff;
+    color: black;
+    transform: translateY(-200%);
+    transition: transform 0.2s;
+    list-style: none;
+}
+.showMenu {
+    transform: translateY(0);
+}
+
+/* Hero Styles */
+.hero-container {
+    height: 30rem;
+    text-align: center;
+    background-image: url('/assets/plan/mobile/image-hero-blackcup.jpg');
+    color: #FEFCF7;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    margin: 30px auto;
+    border-radius: 10px;
+}
+.hero-content {
+    padding: 5rem 0;
+}
+
+/* Container 2 Styles */
+.container-2 {
+    height: 70rem;
+    background-color: #282F38;
+    border-radius: 10px;
+    color: #FEFCF7;
+    padding-top: 3rem;
+}
+.row-2-flex-container {
+    display: flex;
+    flex-direction: column;
+}
+.row-2-flex-item {
+    margin: 3rem 1rem;
+}
+.number {
+    font-size: 4rem;
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    color: #FDD6BA;
+    margin-bottom: 3rem;
+}
+
+.container-3 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5rem;
+    margin-bottom: 4rem;
+}
+.container-3-flex-container-1 {
+    display: none;
+    height: 0;
+    width: 0;
+}
+
+.container-3-flex-container-2 {
+    display: flex;
+    flex-direction: column;
+}
+.flex-item {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 3rem;
+    
+}
+.header-btn-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.header-btn-container button {
+    justify-content: flex-end;
+}
+.option-flex-container {
+    display: flex;
+    flex-direction: column;
+}
+.option-btn {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color:gainsboro;
+    border-radius: 10px;
+    border: none;
+    text-align: left;
+}
+
+/* Tablet Styles */
+@media screen and (min-width: 768px) {
+    .header {
+        padding-top: 2rem;
+    }
+    .ham {
+        display: none;
+    }
+    .menu-container {
+        padding-top: 1rem;
+        justify-content: flex-end;
+    }
+    .menu {
+        display: flex;
+        flex-direction: row;
+        transform: translateY(0);
+        background-color: transparent;
+        justify-content: flex-end;
+        width: 100%;   
+    }
+    .menuLink {
+        color: #83888F;
+        margin-left: 30px;
+        padding-left: 0;
+        text-transform: uppercase;
+        font-size: 15px;
+    }
+
+    .hero-container {
+        background-image: url('/assets/plan/tablet/image-hero-blackcup.jpg');
+        text-align: left;
+    }
+    .hero-content {
+        width: 75%;
+        padding: 5rem 3rem;
+    }
+
+    .row-2-flex-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .row-2-flex-item {
+        width: 32%;
+    }
+    .item-2 {
+        position: relative;
+        left: 1rem;
+    }
+    .item-3 {
+        position: relative;
+        left: 1.5rem;
+    }
+
+    .option-flex-container {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .option-btn {
+        position: relative;
+        left: .3rem;
+        width: 32%;
+        height: 10rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .hero-container {
+        background-image: url('/assets/plan/desktop/image-hero-blackcup.jpg');
+        border-radius: 10px;
+    }
+    .hero-content {
+        width: 60%;
+    }
+
+    .row-2-flex-item {
+        width: 35%;
+        padding-right: 3rem;
+    }
+
+    .container-3-flex-container-1 {
+        display: flex; 
+        flex-direction: column;
+        width: 25%;
+    }
+    .container-3-flex-container-2 {
+        width: 50%;
+    }
+}
