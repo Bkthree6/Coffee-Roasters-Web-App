@@ -32,7 +32,7 @@ a {
     position: relative;
     display: flex;
     height: 4rem;
-    bottom: 1.5rem;
+    bottom: 2.5rem;
     align-items: center;
 }
 .header-logo {
@@ -42,8 +42,11 @@ a {
 /* Menu Styles */
 .menu-container {
     display: flex;
+    position: relative;
     justify-content: right;
-    font-size: 15px;
+    font-size: 20px;
+    width: 10rem;
+    height: 10rem;
 }
 .ham {
     background-color: transparent;
@@ -52,17 +55,26 @@ a {
 }
 .xIcon {
     display: none;
+    position: relative;
+    cursor: pointer;
+    z-index: 10;
 }
 .menu {
-    position: relative;
-    background: #fff;
+    position: absolute;
+    background: #FEFCF7;
     color: black;
     transform: translateY(-200%);
     transition: transform 0.2s;
     list-style: none;
+    height: 12rem;
+    width: 220%;
+    text-align: center;
+    padding-top: 2rem;
+    font-weight: 400;
+    font-family: 'Fraunces', serif;
 }
 .showMenu {
-    transform: translateY(0);
+    transform: translateY(20%);
 }
 .showBtn {
     transform: rotateX(180deg);
@@ -252,11 +264,14 @@ a {
 .icon {
     padding: 0 10px;
 }
+.icon:hover {
+    color: #FDD6BA;
+}
 
 /* Tablet Styles */
 @media screen and (min-width: 768px) {
-    .header {
-        padding-top: 2rem;
+    .header-logo {
+        padding-bottom: 2rem;
     }
     .ham {
         display: none;
@@ -271,7 +286,9 @@ a {
         transform: translateY(0);
         background-color: transparent;
         justify-content: flex-end;
-        width: 100%;   
+        width: 100%; 
+        font-family: 'Barlow', sans-serif;
+        font-weight: 300;  
     }
     .menuLink {
         color: #83888F;

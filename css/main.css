@@ -26,6 +26,9 @@ a {
     background-color: #0E8784;
     color: #FEFCF7;
 }
+#plan-btn {
+    color:#FEFCF7;
+}
 
 .header {
     position: relative;
@@ -42,7 +45,9 @@ a {
 .menu-container {
     display: flex;
     justify-content: right;
-    font-size: 15px;
+    font-size: 20px;
+    width: 10rem;
+    height: 10rem;
 }
 .ham {
     background-color: transparent;
@@ -51,17 +56,26 @@ a {
 }
 .xIcon {
     display: none;
+    position: relative;
+    cursor: pointer;
+    z-index: 10;
 }
 .menu {
-    position: relative;
-    background: #fff;
+    position: absolute;
+    background: #FEFCF7;
     color: black;
     transform: translateY(-200%);
     transition: transform 0.2s;
     list-style: none;
+    height: 12rem;
+    width: 220%;
+    text-align: center;
+    padding-top: 2rem;
+    font-weight: 400;
+    font-family: 'Fraunces', serif;
 }
 .showMenu {
-    transform: translateY(0);
+    transform: translateY(20%);
 }
 
 /* Hero Styles */
@@ -171,11 +185,20 @@ a {
     display: flex;
     flex-direction: column;
 }
+hr {
+    display: none;
+}
+.icon-container {
+    display: none;
+}
 .number {
     font-size: 4rem;
     font-family: 'Fraunces', serif;
     font-weight: 700;
+    line-height: 1.7rem;
     color: #FDD6BA;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
 }
 .footer {
     background-color: #333D4B;
@@ -214,8 +237,8 @@ a {
         font-size: 100px;
         text-transform: lowercase;
     }
-    .header {
-        padding-top: 2rem;
+    .header-logo {
+        padding-bottom: 2rem;
     }
     .ham {
         display: none;
@@ -230,7 +253,9 @@ a {
         transform: translateY(0);
         background-color: transparent;
         justify-content: flex-end;
-        width: 100%;   
+        width: 100%; 
+        font-family: 'Barlow', sans-serif;
+        font-weight: 300;  
     }
     .menuLink {
         color: #83888F;
