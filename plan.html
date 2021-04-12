@@ -36,13 +36,14 @@
   </div>
 
   <!-- Hero Container-->
-  <div class="container">
+  <div class="container mb-5 mt-0">
     <div class="row hero-container">
-      <div class="col-12 col-md-11 ">
+      <div class="col-12 col-md-11 pt-md-4">
         <div class="hero-content">
-          <h1 class="mb-4">Great coffee made simple.</h1>
-          <p class="mb-5">Start your mornings with the world’s best coffees. Try our expertly curated artisan 
-            coffees from our best roasters delivered directly to your door, at your schedule.</p>
+          <h1 class="mb-4">Create a plan</h1>
+          <p class="mb-5">Build a subscription plan that best fits your needs. We offer an
+            assortment of the best artisan coffees from around the globe delivered fresh to your door.
+          </p>
         </div>
       </div>
     </div>
@@ -50,12 +51,21 @@
 
   <!-- Container 2 -->
   <div class="container-fluid container-lg container-2 text-center text-md-left">
-    <div class="row">
+    <div class="row p-lg-4">
+      <div class="col-md-12">
+        <div class="icon-container">
+          <div class="circle"></div>
+          <hr>
+          <div class="circle"></div>
+          <hr>
+          <div class="circle"></div>
+        </div>
+      </div>
       <div class="row-2-flex-container">
         <div class="row-2-flex-item">
           <p class="number">01</p>
-          <h4 class="pb-3 w-20">Pick your coffee</h4>
-          <p class="w-80">Select from our evolving range of artisan coffees. Our beans are ethically 
+          <h4 class="pb-3 w-20">Pick your<br> coffee</h4>
+          <p class="w-80 w-md-100">Select from our evolving range of artisan coffees. Our beans are ethically 
             sourced and we pay fair prices for them. There are new coffees in all profiles 
             every month for you to try out.</p>
 
@@ -69,7 +79,7 @@
         </div>
         <div class="row-2-flex-item item-3">
           <p class="number">03</p>
-          <h4 class="pb-3">Receive and enjoy!</h4>
+          <h4 class="pb-3">Receive and<br> enjoy!</h4>
           <p class="w-80">We ship your package within 48 hours, freshly roasted. Sit back and enjoy award-winning 
             world-class coffees curated to provide a distinct tasting experience.</p>
         </div>
@@ -81,36 +91,36 @@
   <div class="container container-3">
     <div class="row row-3">
       <div class="col-lg-3 container-3-flex-container-1">
-        <button>01 Preferences</button>
-        <button>02 Bean type</button>
-        <button>03 Quantity</button>
-        <button>04 Grind option</button>
-        <button>05 Deliveries</button>
+        <button class="container-3-btn option-header-btn" data-toggle="collapse" data-target="#item1">01 Preferences</button>
+        <button class="container-3-btn option-header-btn" data-toggle="collapse" data-target="#item2">02 Bean type</button>
+        <button class="container-3-btn option-header-btn" data-toggle="collapse" data-target="#item3">03 Quantity</button>
+        <button class="container-3-btn option-header-btn" data-toggle="collapse" data-target="#item4">04 Grind option</button>
+        <button class="container-3-btn option-header-btn" data-toggle="collapse" data-target="#item5">05 Deliveries</button>
       </div>
 
       <div class="col-12 col-lg-9 container-3-flex-container-2">
         <!-- Flex Item 1-->
         <div class="flex-item">
           <div class="header-btn-container">
-            <h4 class="col-10">How do you drink your coffee?</h4>
-            <button type="button" class="col-2 " data-toggle="collapse" data-target="#item1"><img src="/assets/plan/desktop/icon-arrow.svg"></button>
+            <h4 class="col-10 container-3-header">How do you drink your coffee?</h4>
+            <button type="button" class="col-2 option-header-btn header-btn-1" id="header-btn" data-toggle="collapse" data-target="#item1"><img src="/assets/plan/desktop/icon-arrow.svg"></button>
           </div>
-          <div id="item1" class="collapse out">
-            <div class="option-flex-container">
+          <div id="item1"  class="collapse out">
+            <div class="option-flex-container" id="btn-container-1">
               
-              <button class="option-btn" id="opt-1-btn-1" value="Capsule" onclick="option1Btn1()">
+              <button class="option-btn opt-1-btn mt-4 mt-md-0" id="opt-1-btn-1" value="using Capsules" onclick="option1Btn1()">
                 <h5>Capsule</h5>
                 <p class="w-95">Compatible with Nespresso systems and similar brewers</p>
               </button>
 
               
-              <button class="option-btn" id="opt-1-btn-2" value="Filter" onclick="option1Btn2()">
+              <button class="option-btn opt-1-btn" id="opt-1-btn-2" value="as Filter" onclick="option1Btn2()">
                 <h5>Filter</h5>
                 <p class="w-85">For pour over or drip methods like Aeropress, Chemex, and V60</p>
               </button>
 
               
-              <button class="option-btn" id="opt-1-btn-3" value="Espresso" onclick="option1Btn3()">
+              <button class="option-btn opt-1-btn" id="opt-1-btn-3" value="as Espresso" onclick="option1Btn3()">
                 <h5>Espresso</h5>
                 <p class="w-95">Dense and finely ground beans for an intense, flavorful experience</p>
               </button>
@@ -120,24 +130,24 @@
         </div>
 
         <!-- Flex Item 2 -->
-        <div class="flex-item">
+        <div class="flex-item mt-4">
           <div class="header-btn-container">
-            <h4 class="col-10">What type of coffee?</h4>
-            <button type="button" class="col-2 option-header-btn" data-toggle="collapse" data-target="#item2"><img src="/assets/plan/desktop/icon-arrow.svg"></button>
+            <h4 class="col-10 container-3-header">What type of coffee?</h4>
+            <button type="button" class="col-2 option-header-btn header-btn-2" id="header-btn-2" data-toggle="collapse" data-target="#item2"><img src="/assets/plan/desktop/icon-arrow.svg"></button>
           </div>
           <div id="item2" class="collapse out">
-            <div class="option-flex-container">
-              <button class="option-btn" id="opt-2-btn-1" value="Single origin" onclick="option2Btn1()">
+            <div class="option-flex-container" id="btn-container-2">
+              <button class="option-btn opt-2-btn mt-4 mt-md-0" id="opt-2-btn-1" value="Single origin" onclick="option2Btn1()">
                 <h5>Single origin</h5>
                 <p class="w-95">Distinct, high quality coffee from a specific family-owned farm</p>
               </button>
               
-              <button class="option-btn" id="opt-2-btn-2" value="Decaf" onclick="option2Btn2()">
+              <button class="option-btn opt-2-btn" id="opt-2-btn-2" value="Decaf" onclick="option2Btn2()">
                 <h5>Decaf</h5>
                 <p class="w-85">Just like regular coffee, except the caffeine has been removed</p>
               </button>
 
-              <button class="option-btn" id="opt-2-btn-3" value="Blended" onclick="option2Btn3()">
+              <button class="option-btn opt-2-btn" id="opt-2-btn-3" value="Blended" onclick="option2Btn3()">
                 <h5>Blended</h5>
                 <p class="w-95">Combination of two or three dark roasted beans of organic coffees</p>
               </button>
@@ -148,15 +158,15 @@
         </div>
 
         <!-- Flex Item 3 -->
-        <div class="flex-item">
+        <div class="flex-item mt-4">
           <div class="header-btn-container">
-            <h4 class="col-10">How much would you like?</h4>
-            <button type="button" class="col-2 " data-toggle="collapse" data-target="#item3"><img src="/assets/plan/desktop/icon-arrow.svg"></button>
+            <h4 class="col-10 container-3-header">How much would you like?</h4>
+            <button type="button" class="col-2 option-header-btn header-btn-3" id="header-btn-3" data-toggle="collapse" data-target="#item3"><img src="/assets/plan/desktop/icon-arrow.svg"></button>
           </div>
           <div id="item3" class="collapse out">
-            <div class="option-flex-container">
+            <div class="option-flex-container" id="btn-container-3">
               
-              <button class="option-btn" id="opt-3-btn-1" value="250g" onclick="option3Btn1()">
+              <button class="option-btn mt-4 mt-md-0" id="opt-3-btn-1" value="250g" onclick="option3Btn1()">
                 <h5>250g</h5>
                 <p class="w-95">Perfect for the solo drinker. Yields about 12 delicious cups.</p>
               </button>
@@ -176,20 +186,20 @@
         </div>
 
         <!-- Flex Item 4 -->
-        <div class="flex-item">
+        <div class="flex-item mt-4">
           <div class="header-btn-container">
-            <h4 class="col-10">Want us to grind them?</h4>
-            <button type="button" class="col-2 " data-toggle="collapse" data-target="#item4"><img src="/assets/plan/desktop/icon-arrow.svg"></button>
+            <h4 class="col-10 container-3-header">Want us to grind them?</h4>
+            <button type="button" class="col-2 option-header-btn header-btn-4" id="header-btn-4" data-toggle="collapse" data-target="#item4"><img src="/assets/plan/desktop/icon-arrow.svg"></button>
           </div>
           <div id="item4" class="collapse out">
-            <div class="option-flex-container">
+            <div class="option-flex-container" id="btn-container-4">
               
-              <button class="option-btn" id="opt-4-btn-1" value="Wholebean" onclick="option4Btn1()">
+              <button class="option-btn mt-4 mt-md-0" id="opt-4-btn-1" value="Wholebean" onclick="option4Btn1()">
                 <h5>Wholebean</h5>
                 <p class="w-95">Best choice if you cherish the full sensory experience</p>
               </button>
 
-              <button class="option-btn" id="opt-4-btn-2" value="Filter" onclick="option4Btn2()">
+              <button class="option-btn" id="opt-4-btn-2" value="as Filter" onclick="option4Btn2()">
                 <h5>Filter</h5>
                 <p class="w-85">For drip or pour-over coffee methods such as V60 or Aeropress/p>
               </button>
@@ -204,15 +214,15 @@
         </div>
 
         <!-- Flex Item 5 -->
-        <div class="flex-item">
+        <div class="flex-item mb-5 mt-4">
           <div class="header-btn-container">
-            <h4 class="col-10">How often should we deliver?</h4>
-            <button type="button" class="col-2 " data-toggle="collapse" data-target="#item5"><img src="/assets/plan/desktop/icon-arrow.svg"></button>
+            <h4 class="col-10 container-3-header">How often should we deliver?</h4>
+            <button type="button" class="col-2 option-header-btn header-btn-5" id="header-btn-5" data-toggle="collapse" data-target="#item5"><img src="/assets/plan/desktop/icon-arrow.svg"></button>
           </div>
           <div id="item5" class="collapse out">
-            <div class="option-flex-container">
+            <div class="option-flex-container" id="btn-container-5">
               
-              <button class="option-btn" id="opt-5-btn-1" value="Every week" onclick="option5Btn1()">
+              <button class="option-btn mt-4 mt-md-0" id="opt-5-btn-1" value="Every week" onclick="option5Btn1()">
                 <h5>Every week</h5>
                 <p class="w-95">$14.00 per shipment. Includes free first-class shipping.</p>
               </button>
@@ -227,12 +237,11 @@
                 <p class="w-95">$22.50 per shipment. Includes free priority shipping.</p>
               </button>
               
-
             </div>
           </div>
         </div>
 
-        <div class="order-summary-container">
+        <div class="order-summary-container mt-5 mb-5 p-3">
           <h5>Order Summary</h5>
           <p>“I drink coffee <span id="opt-item-1">_____</span>, with a <span id="opt-item-2" >_____</span> type of bean. <span id="opt-item-3">_____</span> ground ala <span id="opt-item-4">_____</span>, 
             sent to me <span id="opt-item-5">_____</span>.”</p>

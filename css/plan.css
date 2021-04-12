@@ -64,6 +64,9 @@ a {
 .showMenu {
     transform: translateY(0);
 }
+.showBtn {
+    transform: rotateX(180deg);
+}
 
 /* Hero Styles */
 .hero-container {
@@ -74,8 +77,8 @@ a {
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    margin: 30px auto;
-    border-radius: 10px;
+    margin: 0 auto;
+    
 }
 .hero-content {
     padding: 5rem 0;
@@ -96,6 +99,9 @@ a {
 .row-2-flex-item {
     margin: 3rem 1rem;
 }
+.icon-container {
+    display: none;
+}
 .number {
     font-size: 4rem;
     font-family: 'Fraunces', serif;
@@ -115,6 +121,21 @@ a {
     height: 0;
     width: 0;
 }
+.container-3-btn {
+    position: relative;
+    font-family: 'Fraunces', serif;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #b4b6b8;
+    text-align: left;
+    width: 75%;
+    left: 2rem;
+    margin-bottom: 1rem;
+    color:#b4b6b8;
+}
+.container-3-btn:hover {
+    color:#282F38;
+}
 
 .container-3-flex-container-2 {
     display: flex;
@@ -126,6 +147,9 @@ a {
     margin-top: 3rem;
     
 }
+.container-3-header {
+    color:#83888F;
+}
 .header-btn-container {
     display: flex;
     flex-direction: row;
@@ -133,13 +157,17 @@ a {
     align-items: center;
     
 }
-.header-btn-container button {
+.option-header-btn {
     justify-content: flex-end;
+    background-color: transparent;
+    border: none;
 }
 .option-flex-container {
     display: flex;
     flex-direction: column;
 }
+
+/* Option Button Styles */
 .option-btn {
     height: 100%;
     width: 100%;
@@ -151,9 +179,35 @@ a {
     border: none;
     text-align: left;
 }
+.option-btn:hover {
+    background-color: #FDD6BA;
+}
+.active-1 {
+    background-color: #0E8784;
+    color:#FEFCF7;
+}
+.active-2 {
+    background-color: #0E8784;
+    color:#FEFCF7;
+}
+.active-3 {
+    background-color: #0E8784;
+    color:#FEFCF7;
+}
+.active-4 {
+    background-color: #0E8784;
+    color:#FEFCF7;
+}
+.active-5 {
+    background-color: #0E8784;
+    color:#FEFCF7;
+}
+
+
+/* Order Summary Styles */
 .order-summary-container {
     background-color: #282F38;
-    margin-left: .9rem;
+    border-radius: 10px;
 }
 .order-summary-container h5 {
     color: #83888F;
@@ -162,7 +216,8 @@ a {
     font-family: 'Fraunces', serif;
     color: #FEFCF7;
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
 }
 .container-3-btn-container {
     display: flex;
@@ -235,21 +290,47 @@ a {
         padding: 5rem 3rem;
     }
 
+    .container-2 {
+        height: 35rem;
+    }
     .row-2-flex-container {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
+    
+    .icon-container {
+        display: flex;
+        position: relative;
+        flex-direction: row;
+    }
+    .circle {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        border: 1px solid #0E8784;
+    
+    }
+    hr {
+        padding-left: 0;
+        padding-right: 0;
+        margin: 20px 0;
+        height: 5%;
+        width: 30%;
+        color: #FDD6BA;
+        background-color: #FDD6BA;
+    }
     .row-2-flex-item {
-        width: 32%;
+        width: 31%;
+        
     }
     .item-2 {
         position: relative;
-        left: 1rem;
+        left: .4rem;
     }
     .item-3 {
         position: relative;
-        left: 1.5rem;
+        left: .4rem;
     }
 
     .option-flex-container {
@@ -262,16 +343,21 @@ a {
         width: 32%;
         height: 10rem;
     }
+    .footer-logo-container {
+        padding-left: 11rem;
+    }
 }
 
 @media screen and (min-width: 992px) {
     .hero-container {
+        height: 25rem;
         background-image: url('/assets/plan/desktop/image-hero-blackcup.jpg');
         border-radius: 10px;
     }
     .hero-content {
         width: 60%;
     }
+
 
     .row-2-flex-item {
         width: 35%;
@@ -283,6 +369,7 @@ a {
         flex-direction: column;
         width: 25%;
     }
+    
     .container-3-flex-container-2 {
         width: 50%;
     }
