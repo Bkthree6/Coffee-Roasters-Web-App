@@ -43,7 +43,6 @@
           <h1 class="mb-4">Great coffee made simple.</h1>
           <p class="mb-5">Start your mornings with the world’s best coffees. Try our expertly curated artisan 
             coffees from our best roasters delivered directly to your door, at your schedule.</p>
-          <button class="btn">Create your plan</button>
         </div>
       </div>
     </div>
@@ -99,19 +98,19 @@
           <div id="item1" class="collapse out">
             <div class="option-flex-container">
               
-              <button class="option-btn">
+              <button class="option-btn" id="opt-1-btn-1" value="Capsule" onclick="option1Btn1()">
                 <h5>Capsule</h5>
                 <p class="w-95">Compatible with Nespresso systems and similar brewers</p>
               </button>
 
               
-              <button class="option-btn">
+              <button class="option-btn" id="opt-1-btn-2" value="Filter" onclick="option1Btn2()">
                 <h5>Filter</h5>
                 <p class="w-85">For pour over or drip methods like Aeropress, Chemex, and V60</p>
               </button>
 
               
-              <button class="option-btn">
+              <button class="option-btn" id="opt-1-btn-3" value="Espresso" onclick="option1Btn3()">
                 <h5>Espresso</h5>
                 <p class="w-95">Dense and finely ground beans for an intense, flavorful experience</p>
               </button>
@@ -128,17 +127,17 @@
           </div>
           <div id="item2" class="collapse out">
             <div class="option-flex-container">
-              <button class="option-btn">
+              <button class="option-btn" id="opt-2-btn-1" value="Single origin" onclick="option2Btn1()">
                 <h5>Single origin</h5>
                 <p class="w-95">Distinct, high quality coffee from a specific family-owned farm</p>
               </button>
               
-              <button class="option-btn option-item">
+              <button class="option-btn" id="opt-2-btn-2" value="Decaf" onclick="option2Btn2()">
                 <h5>Decaf</h5>
                 <p class="w-85">Just like regular coffee, except the caffeine has been removed</p>
               </button>
 
-              <button class="option-btn">
+              <button class="option-btn" id="opt-2-btn-3" value="Blended" onclick="option2Btn3()">
                 <h5>Blended</h5>
                 <p class="w-95">Combination of two or three dark roasted beans of organic coffees</p>
               </button>
@@ -157,17 +156,17 @@
           <div id="item3" class="collapse out">
             <div class="option-flex-container">
               
-              <button class="option-btn">
+              <button class="option-btn" id="opt-3-btn-1" value="250g" onclick="option3Btn1()">
                 <h5>250g</h5>
                 <p class="w-95">Perfect for the solo drinker. Yields about 12 delicious cups.</p>
               </button>
 
-              <button class="option-btn">
+              <button class="option-btn" id="opt-3-btn-2" value="500g" onclick="option3Btn2()">
                 <h5>500g</h5>
                 <p class="w-85">Perfect option for a couple. Yields about 40 delectable cups.</p>
               </button>
 
-              <button class="option-btn">
+              <button class="option-btn" id="opt-3-btn-3" value="1000g" onclick="option3Btn3()">
                 <h5>1000g</h5>
                 <p class="w-95">Perfect for offices and events. Yields about 90 delightful cups.</p>
               </button>
@@ -185,17 +184,17 @@
           <div id="item4" class="collapse out">
             <div class="option-flex-container">
               
-              <button class="option-btn">
+              <button class="option-btn" id="opt-4-btn-1" value="Wholebean" onclick="option4Btn1()">
                 <h5>Wholebean</h5>
                 <p class="w-95">Best choice if you cherish the full sensory experience</p>
               </button>
 
-              <button class="option-btn">
+              <button class="option-btn" id="opt-4-btn-2" value="Filter" onclick="option4Btn2()">
                 <h5>Filter</h5>
                 <p class="w-85">For drip or pour-over coffee methods such as V60 or Aeropress/p>
               </button>
 
-              <button class="option-btn">
+              <button class="option-btn" id="opt-4-btn-3" value="Cafetiére" onclick="option4Btn3()">
                 <h5>Cafetiére</h5>
                 <p class="w-95">Course ground beans specially suited for french press coffee</p>
               </button>
@@ -213,17 +212,17 @@
           <div id="item5" class="collapse out">
             <div class="option-flex-container">
               
-              <button class="option-btn">
+              <button class="option-btn" id="opt-5-btn-1" value="Every week" onclick="option5Btn1()">
                 <h5>Every week</h5>
                 <p class="w-95">$14.00 per shipment. Includes free first-class shipping.</p>
               </button>
 
-              <button class="option-btn">
+              <button class="option-btn" id="opt-5-btn-2" value="Every 2 weeks" onclick="option5Btn2()">
                 <h5>Every 2 weeks</h5>
                 <p class="w-85">$17.25 per shipment. Includes free priority shipping.</p>
               </button>
 
-              <button class="option-btn">
+              <button class="option-btn" id="opt-5-btn-3" value="Every month" onclick="option5Btn3()">
                 <h5>Every month</h5>
                 <p class="w-95">$22.50 per shipment. Includes free priority shipping.</p>
               </button>
@@ -233,10 +232,40 @@
           </div>
         </div>
 
+        <div class="order-summary-container">
+          <h5>Order Summary</h5>
+          <p>“I drink coffee <span id="opt-item-1">_____</span>, with a <span id="opt-item-2" >_____</span> type of bean. <span id="opt-item-3">_____</span> ground ala <span id="opt-item-4">_____</span>, 
+            sent to me <span id="opt-item-5">_____</span>.”</p>
+        </div>
+
+        <div class="container-3-btn-container">
+          <button class="btn">Create your plan</button>
+        </div>
+
       </div>
-
     </div>
+  </div>
 
+  <!-- Footer -->
+  <div class="container">
+    <div class="row footer">
+      <div class="col-12 col-lg-3 footer-logo-container">
+        <a href="index.html"><img class="footer-logo" src="/assets/shared/desktop/logo-white.png"></a>
+    </div>
+    <div class="col-12 col-lg-6 text-decoration-none">
+      <ul class="footer-nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a>Create your plan</a></li>
+      </ul>
+    </div>
+    <div class="col-12 col-lg-3 text-center text-lg-right">
+        <div class="icon-flex-container">
+          <img class="icon" src="assets/shared/desktop/icon-facebook.svg">
+          <img class="icon" src="assets/shared/desktop/icon-twitter.svg">
+          <img class="icon" src="assets/shared/desktop/icon-instagram.svg">
+        </div>
+      </div>
   </div>
 
 
