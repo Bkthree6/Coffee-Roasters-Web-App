@@ -363,6 +363,7 @@ a {
         left: .3rem;
         width: 32%;
         height: 10rem;
+        max-height: 150px;
     }
     .footer-logo-container {
         padding-left: 11rem;
