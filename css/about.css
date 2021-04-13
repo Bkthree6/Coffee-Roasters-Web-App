@@ -181,12 +181,12 @@ a {
 
 @media screen and (min-width: 768px) {
     body {
-        overflow-x: hidden;
+        
     }
     .header {
         width: 100%;
         margin: 0 auto;
-        padding-top: 1.5rem;
+        
     }
     .header-logo {
         padding-top: 1rem;
