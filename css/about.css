@@ -188,29 +188,35 @@ a {
         margin: 0 auto;
         padding-top: 1.5rem;
     }
-    .logo-container {
-        padding-left: 0;
-    }
     .header-logo {
-        padding-top: 2rem;
+        padding-top: 1rem;
     }
     .ham {
         display: none;
     }
     .menu-container {
+        padding-top: 1rem;
         justify-content: flex-end;
-        padding-right: 0;
     }
     .menu {
         display: flex;
+        position: relative;
         flex-direction: row;
-        transform: translateY(80%);
+        transform: translateY(0);
         background-color: transparent;
         justify-content: flex-end;
+        width: 100%; 
+        font-family: 'Barlow', sans-serif;
+        font-weight: 300;  
+        padding-left: 0;
     }
     .menuLink {
         color: #83888F;
-        margin-left: 2rem;
+        margin-left: 30px;
+        padding-left: 0;
+        text-transform: uppercase;
+        font-size: 15px;
+        width: 20%;
     }
     .row-1 {
         width: 100%;
