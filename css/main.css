@@ -34,7 +34,6 @@ a {
     position: relative;
     display: flex;
     height: 4rem;
-    bottom: 1.5rem;
     align-items: center;
 }
 .header-logo {
@@ -44,10 +43,9 @@ a {
 /* Menu Styles */
 .menu-container {
     display: flex;
-    justify-content: right;
+    justify-content: flex-end;
     font-size: 20px;
-    width: 10rem;
-    height: 10rem;
+    text-align: center;
 }
 .ham {
     background-color: transparent;
@@ -61,18 +59,19 @@ a {
     z-index: 10;
 }
 .menu {
-    position: absolute;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     background: #FEFCF7;
     color: black;
     transform: translateY(-200%);
     transition: transform 0.2s;
     list-style: none;
-    height: 12rem;
-    width: 220%;
-    text-align: center;
-    padding-top: 2rem;
     font-weight: 400;
     font-family: 'Fraunces', serif;
+    padding-right: 1.5rem;
 }
 .showMenu {
     transform: translateY(20%);

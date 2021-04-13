@@ -36,9 +36,10 @@ a {
 /* Menu Styles */
 .menu-container {
     display: flex;
-    justify-content: right;
-    font-size: 15px;
-    text-transform: uppercase;
+    position: relative;
+    justify-content: flex-end;
+    font-size: 20px;
+    text-align: center;
 }
 .ham {
     background-color: transparent;
@@ -49,12 +50,19 @@ a {
     display: none;
 }
 .menu {
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     background: #FEFCF7;
     color: black;
     transform: translateY(-200%);
     transition: transform 0.2s;
     list-style: none;
+    font-weight: 400;
+    font-family: 'Fraunces', serif;
+    padding-right: 1.5rem;
 }
 
 .showMenu {
