@@ -25,9 +25,7 @@ a {
     position: relative;
     display: flex;
     height: 4rem;
-    bottom: 1.5rem;
     align-items: center;
-
 }
 .header-logo {
     width: 10rem;
@@ -48,6 +46,8 @@ a {
 }
 .xIcon {
     display: none;
+    position: relative;
+    z-index: 10;
 }
 .menu {
     position: fixed;
@@ -63,6 +63,7 @@ a {
     font-weight: 400;
     font-family: 'Fraunces', serif;
     padding-right: 1.5rem;
+    padding-top: 1.5rem;
 }
 
 .showMenu {

@@ -72,9 +72,10 @@ a {
     font-weight: 400;
     font-family: 'Fraunces', serif;
     padding-right: 1.5rem;
+    padding-top: 1.5rem;
 }
 .showMenu {
-    transform: translateY(20%);
+    transform: translateY(0);
 }
 
 /* Hero Styles */
